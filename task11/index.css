@@ -1,0 +1,180 @@
+body,div,ul{
+  margin: 0;
+  padding: 0;
+}
+
+#list{
+  width:300px;
+  color:#444;
+  margin:20px auto;
+}
+th{
+  background:#000;
+  color:#fff;
+}
+tr:nth-of-type(odd){
+  background:#ccc;
+  font-weight:bold;
+}
+tr:nth-of-type(even){
+  background:#f3f3f3;
+}
+table tr:nth-child(-n+4){
+  color:red;
+}
+tr:nth-child(n+2):hover{
+  background:#f3f3f3;
+  opacity: 0.3;
+}
+
+#input{
+  width:300px;
+  margin:0px auto;
+}
+input{
+  margin: 20px;
+}
+input:focus{
+  width:300px;
+  border-radius: 10px;
+}
+
+
+#tab{
+  width:300px;
+  height:300px;
+  margin:0px auto;
+  border:1px solid #000;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.info{
+  width:300px;
+  height:300px;
+  text-align: center;
+  font-weight: bold;
+  font-size:80px;
+  line-height: 300px;
+}
+#tab #tab-ul{
+  list-style: none;
+  display: inline-flex;
+  position: relative;
+  animation: slidein 10s infinite;
+  -webkit-animation: slidein 10s infinite;
+  -moz-animation: slidein 10s infinite;
+}
+#tab #tab-ul li:nth-child(1){
+  background:blue;
+}
+#tab #tab-ul li:nth-child(2){
+  background:green;
+  float: left;
+}
+#tab #tab-ul li:nth-child(3){
+  background:#f3f;
+  float: left;
+}
+
+#tab .tab-a{
+  width:30px;
+  height:20px;
+  border-radius: 25px;
+  position: relative;
+  top:-30px;
+  margin-left: 10px;
+  float: left;
+}
+#tab-a1{
+  animation: slide1 10s infinite;
+}
+#tab-a2{
+  animation: slide2 10s infinite;
+}
+#tab-a3{
+  animation: slide3 10s infinite;
+}
+#tab a{
+  width:30px;
+  height:20px;
+  display: block;
+  float: left;
+  color:#000;
+  text-align: center;
+  border-radius: 25px;
+  text-decoration:none;
+}
+#tab a:hover{
+  background:#000;
+  color:#fff;
+  cursor: pointer;
+}
+
+@keyframes slidein {
+  from {
+    left:0
+  }
+  50%{
+    left:-300px
+  }
+  to {
+    left: -600px;
+  }
+}
+@-webkit-keyframes slidein{
+  from {
+    left:0
+  }
+  50%{
+    left:-300px
+  }
+  to {
+    left: -600px;
+  }
+}
+@-moz-keyframes slidein{
+  from {
+    left:0
+  }
+  50%{
+    left:-300px
+  }
+  to {
+    left: -600px;
+  }
+}
+@keyframes slide1{
+  from {
+    background:red;
+  }
+  50%{
+    background:#ccc;
+  }
+  to {
+    background:#ccc;
+  }
+}
+@keyframes slide2{
+  from {
+    background:#ccc;
+  }
+  70%{
+    background:red;
+  }
+  to {
+    background: #ccc;
+  }
+}
+@keyframes slide3{
+  from {
+    background:#ccc;
+  }
+  70%{
+    background: #ccc;
+  }
+  to {
+    background:red;
+  }
+}
+/*点击显示可以考虑:target----我在动画animation中使用，会有问题*/
