@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>个人管理系统</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css" />
+</head>
+<body>
+	<div id='header'>
+		GTD Tools
+		<input id="clear" type="button" value="清空所有">
+	</div>
+	<div id="main">
+		<div id='list'>
+			<div id='all'>所有任务(10)</div>
+			<div id='list-div'>
+				<span>列表分类</span>
+				<div id='uli' class='uli'><i class="fa fa-folder-open fa-lg"></i>默认分类(0)</div>
+				<ul>
+				</ul>
+			</div>
+			<div id='addlist'>
+				<i class="fa fa-plus"></i>&nbsp;&nbsp;新增分类
+			</div>
+		</div>
+		<div id='list-index'>
+			<div id='nav'>
+				<ul>
+					<li id='alltask'>所有</li>
+					<li id='unfinished'>未完成</li>
+					<li id='finished'>已完成</li>
+				</ul>
+			</div>
+			<div id='list-list'>
+				<ul></ul>
+			</div>
+			<div id='addtask'>
+				<i class="fa fa-plus"></i>&nbsp;&nbsp;新增任务
+			</div>
+		</div>
+	</div>
+	<div id='content'>
+		<form id='form'>
+			<div id='title'>
+				<input id='file' type='text' value='' disabled />
+				<i id='iconSave' class="fa fa-check-circle fa-2x"></i>
+				<i id='iconModify' class="fa fa-eyedropper fa-2x"></i>
+			</div>
+			<div id="data">
+				<input id='time' type='text' value='' disabled />
+				<textarea id='area' value='' disabled ></textarea>
+			</div>
+		</form>
+	</div>
+	<div style=" clear:both; "></div>
+
+	<script type='text/javascript' src="js/localStorage.js"></script>
+</body>

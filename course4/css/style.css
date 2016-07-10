@@ -1,0 +1,225 @@
+/*----------------初始化基本格式开始---------------------*/
+body,div,ul,ol,li,dl,dt,h1,h2,h3,h4,h5,h6,form,input,textarea,p{
+	margin:0px;
+	padding:0px;
+	font-size:13px;
+}
+
+ul{
+	list-style:none;
+}
+
+img,a img{
+	border:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+a:hover{
+	text-decoration:none;
+}
+/*-------------初始化基本格式结束-------------------------*/
+body{
+	font-family:华文细黑, "MicrosoftJhengHei", "Microsoft YaHei", 微软雅黑, STHeiti, MingLiu, 'New Century Schoolbook', Times, TimesNR, Georgia, 'New York', serif;
+}
+#header{
+	width:100%;
+	height:60px;
+	background:#dcdcdc;
+	color:#aaa;
+	font-size:25px;
+	font-weight:bold;
+	line-height:65px;
+	text-indent:20px;
+	border-bottom:1px solid #ccc;
+	margin-top:1px;
+}
+
+#header input{
+	width:70px;
+	height:60px;
+	font-size:16px;
+	line-height:50px;
+	margin-right:2px;
+	float:right;
+}
+#main{
+	width:542px;
+}
+
+#list{
+	width:274px;
+	height:35%;
+	background:#ededed;
+	border:1px solid #ccc;
+	border-top:0;
+	float:left;
+}
+#list #all{
+	width:274px;
+	height:40px;
+	font-size:15px;
+	line-height:60px;
+	text-indent:20px;
+	cursor:pointer;
+}
+#list #list-div{
+	width:274px;
+	height:496px;
+	font-size:16px;
+	line-height:50px;
+	text-indent:20px;
+	border-bottom:1px solid #ccc;
+}
+#list #list-div span{
+	cursor:pointer;
+}
+#list #list-div ul li{
+	width:274px;
+	height:20px;
+	font-size:14px;
+	line-height:20px;
+	border-radius:15px;
+	margin:0 0;
+}
+#uli{
+	width:274px;
+	height:20px;
+	font-size:14px;
+	line-height:20px;
+	border-radius:15px;
+	margin:0 0;
+}
+.uli{
+	background:#fff;
+}
+
+.indent{
+	text-indent:50px;
+}
+
+#list #addlist{
+	width:274px;
+	height:48px;
+	font-size:16px;
+	text-indent:20px;
+	line-height:48px;
+	cursor:pointer;
+}
+
+#list-index{
+	width:265px;
+	height:35%;
+	border:1px solid #ccc;
+	border-left:0;
+	border-top:0;
+	float:left;
+}
+#list-index #nav{
+	width:265px;
+	height:50px;
+	background:#ededed;
+	border-bottom:1px solid #ccc;
+}
+#list-index #nav ul li{
+	width:45px;
+	height:20px;
+	margin:13px 10px;
+	line-height:20px;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+}
+
+#list-index #list-list{
+	width:265px;
+	height:485px;
+	border-bottom:1px solid #ccc;
+}
+#list-index #list-list ul li{
+	width:265px;
+	height:20px;
+	font-size:15px;
+	line-height:20px;
+	text-indent:20px;
+}
+.data{
+	background:#FAF0E6;
+}
+.textData{
+	background:#F2F2F2;
+}
+.textColor{
+	color:#9ACD32;
+}
+
+#list-index #addtask{
+	width:265px;
+	height:48px;
+	font-size:16px;
+	text-indent:20px;
+	line-height:48px;
+	background:#ededed;
+	cursor:pointer;
+}
+
+#content{
+	width:auto;
+	margin-left:-542px;
+	height:35%;
+	border-bottom:1px solid #ccc;
+	overflow:hidden;
+}
+
+#content #title{
+	width:100%;
+	height:60px;
+	background:#ededed;
+}
+
+#content #title #file{
+	width:80%;
+	height:60px;
+	font-size:18px;
+	text-indent:20px;
+	line-height:60px;
+	background:#ededed;
+	border:none;
+}
+
+#content #form #title i{
+	width:6%;
+	opacity:0.6;
+	text-indent:30px;
+	/*margin:15px 10px 0px 0px;*/
+	cursor:pointer;
+}
+#iconSave{
+	margin-left: -30px;
+}
+
+#content #data{
+	width:100%;
+}
+#content #time{
+	width:100%;
+	height:50px;
+	font-size:18px;
+	text-indent:20px;
+	line-height:60px;
+	background:#FFFAF0;
+	border:none;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #ccc;
+}
+#content #form textarea{
+	width:100%;
+	height:468px;
+	font-size:18px;
+	text-indent:20px;
+	line-height:35px;
+	border:none;
+	background:#fff;
+}
